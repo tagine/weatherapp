@@ -1,5 +1,27 @@
 # Weather App
 
+### User story
+
+- I am a person who leaves the house
+- I need to lookup the weather to know what it's like outside
+- I would like to be able to do that using my location
+
+### Features
+
+- Weather dashboard application
+- Search functionality
+- Saves search history using Local Storage
+- Pulls info using Openweather API Ajax calls
+- Uses icons for weather data visualization 
+- Pulls up data for: Current temperature, Current humidity, Windspeed, Uv index, 5 day forecast
+
+### Codebase stack
+
+- jQuery
+- ajax
+- CSS
+- HTML
+
 <!-- INSTRUCTIONS
 
 # Unit 06 Server-Side APIs Homework: Weather Dashboard
