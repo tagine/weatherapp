@@ -5,7 +5,7 @@ var latlon = "lat=39.95&lon=-75.16";
 
 // Here we are building the URL we need to query the database
 var weatherURL = "https://api.openweathermap.org/data/2.5/weather?" +
-    "q=Bujumbura,Burundi&units=imperial&appid=" + APIKey;
+    "q=Philadelphia,US&units=imperial&appid=" + APIKey;
 var uviURL = "https://api.openweathermap.org/data/2.5/uvi?" + "lat=39.95&lon=-75.16&appid=" + APIKey;
 //MIGHT JUST BE A BAD CALL SYNTAX
 
@@ -46,7 +46,7 @@ $.ajax({
     })
             .then(function (response) {
 
-        // $(".uvi").html("<p>" + UV Index" + response.value + "<p>");
+         $(".uvi").html("UV Index" + response.value);
         console.log("UV Index" + response.value);
     
     });
