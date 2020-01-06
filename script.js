@@ -1,3 +1,20 @@
+//Materialize side nav
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
 // This is our API key
 var APIKey = "986bd5af56b3d8724d12f185ce2409ca";
 var latlon = "lat=39.95&lon=-75.16";
@@ -46,7 +63,7 @@ $.ajax({
     })
             .then(function (response) {
 
-         $(".uvi").html("UV Index" + response.value);
+         $(".uvi").html("UV Index " + response.value);
         console.log("UV Index" + response.value);
     
     });
