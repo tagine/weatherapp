@@ -40,14 +40,28 @@
     </div>
     <!-- Forecast -->
     <div class="row">
-
+      <div class="col-md-8">
+      <form>
+        <div class="form-group col-md-8">
+            <label for="searchterm">Search city</label>
+            <input type="search" class="form-control" id="searchInput" aria-describedby="searchTerm">
+            <button type="search" class="btn btn-primary" id="searchBtn"><i class="fa fa-search"></i>
+              <h8> Search</h8></i>
+          </button>
+          <button type="clear" class="btn btn-primary" id="clearBtn"><i class="fa fa-trash">
+                  <h8> Clear Results</h8>
+              </i></button>
+          </div>
+        </form>
+      </div>
     </div>
       <div class="row">
       <div class="city col-md-3"></div>
       <div class="wind col-md-2"></div>
       <div class="humidity col-md-2"></div>
-      <div class="temp col-md-2"></div>
+      <div class="temp col-md-2"></div> 
       <div class="uvi col-md-2"></div>
+    </div>
     </div>
   </div>
 </body>
