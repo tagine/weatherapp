@@ -44,7 +44,9 @@ $.ajax({
             $(".city").html("<h3>" + response.name + " Weather Details</h3>");
             $(".wind").text("Wind Speed: " + response.wind.speed);
             $(".humidity").text("Humidity: " + response.main.humidity);
-            $(".temp").text("Temperature (F) " + response.main.temp);
+            $(".temp").text("Temperature (F) " + response.main.temp); 
+            
+            // Attempting to add degree symbol but it's not accepting it" &#8457"
 
             // Converts the temp to Kelvin with the below formula
             var tempF = (response.main.temp - 273.15) * 1.80 + 32;
@@ -67,3 +69,8 @@ $.ajax({
         console.log("UV Index" + response.value);
     
     });
+
+    localStorage.setItem(".city");
+    localStorage.getItem(".city");
+
+    console.log("This is local storage", localStorage);
